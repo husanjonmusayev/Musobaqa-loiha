@@ -21,8 +21,9 @@
   border: 1px solid transparent;
 }
 .btn:hover {
-  background-color: transparent;
+  background: rgb(41, 80, 188);
   cursor: pointer;
+  color: rgb(254, 254, 254);
   border-color: white;
 }
 .btn:hover img {
@@ -37,6 +38,13 @@ body {
   width: 100%;
 }
 /* header stayle  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  background: #1c1c1e;
+}
 header {
   width: 100%;
   margin-top: 65px;
@@ -86,6 +94,62 @@ header {
   color: rgb(255, 255, 255);
   opacity: 0.3;
 }
+.hamburger,
+.navs {
+  display: none;
+}
+.hamburger .navs ul {
+  list-style: none;
+}
+.hamburger .navs a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+@media screen and (max-width: 1240px) {
+  header,
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 998px;
+  }
+}
+@media screen and (max-width: 998px) {
+  header,
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+  }
+}
+@media screen and (max-width: 720px) {
+  header,
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 512px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .headrer_col {
+    display: none;
+  }
+}
+@media screen and (max-width: 512px) {
+  header,
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .headrer_col {
+    display: none;
+  }
+}
 /* main stayle  */
 
 .home-main {
@@ -113,7 +177,7 @@ header {
   align-items: center;
   padding: 10px 15px;
   border: none;
-
+  background: white;
   width: 155px;
   border-radius: 50px;
   transition: all 0.5s;
@@ -121,6 +185,13 @@ header {
   font-size: 16px;
   border: 1px solid transparent;
 }
+.btn-whit img {
+  background: transparent;
+}
+.btn img {
+  background: transparent;
+}
+
 .main-img {
   width: 100%;
   height: 415px;
